@@ -1,6 +1,7 @@
-CREATE DATABASE kuorra_login;
 
-USE kuorra_login;
+CREATE DATABASE ferreteriamago;
+
+USE ferreteriamago;
 
 CREATE TABLE users(
     username varchar(20) NOT NULL PRIMARY KEY,
@@ -31,14 +32,31 @@ CREATE TABLE logs(
 )ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
+CREATE TABLE clientes (
+    id_cliente int not null primary key AUTO_INCREMENT,
+    nombre varchar(30) not null,
+    apellido_paterno varchar(30) not null,
+    apellido_materno varchar(30) not null,
+    telefono varchar(10) not null,
+    email varchar(50) not null
+)ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
 INSERT INTO users (username, password, privilege, status, name, email, other_data, user_hash, change_pwd)
 VALUES ('admin',MD5(concat('admin', 'kuorra_key')), 0, 1, 'Admin', 'admin@gmail.com','TIC:SI', MD5(concat('admin', 'kuorra_key', '2016/06/04')), 0),
 ('guess',MD5(concat('guess', 'kuorra_key')), 1, 1, 'Guess', 'guess@gmail.com','TIC:SI', MD5(concat('guess', 'kuorra_key','2016/06/04')), 0);
 
 
+INSERT INTO clientes (nombre, apellido_paterno, apellido_materno, telefono, email) VALUES 
+    ('Maria de los Angeles','Gayosso','Octaviano','7757584354','annggii199@gmail.com'),
+    ('Alexis Andres','Hernandez','Ramirez','7765849213','alexis@gmail.com'),
+    ('Luisa','Octaviano','Sebastian','6657484920','luisa@outlook.com');
+
+
 SELECT * FROM users;
 SELECT * FROM sessions;
+SELECT * FROM clientes;
 
-CREATE USER 'kuorra'@'localhost' IDENTIFIED BY 'kuorra.2018';
-GRANT ALL PRIVILEGES ON kuorra_login.* TO 'kuorra'@'localhost';
+CREATE USER 'ferreteria'@'localhost' IDENTIFIED BY 'ferreteria.2019';
+GRANT ALL PRIVILEGES ON ferreteriamago.* TO 'ferreteria'@'localhost';
 FLUSH PRIVILEGES;
