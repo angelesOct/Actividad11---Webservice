@@ -1,77 +1,26 @@
-# Kuorra login
+1. Crear la tabla clientes con los siguientes campos: 
 
-### Introduction
+1.1 id_cliente
+1.2 nombre
+1.3 apellido_paterno
+1.4 apellido_materno
+1.5 telefono
+1.6 email
 
-Kuorra is a Web.py Microframework Frontend, use kuorra to create a MVC skeleton for work with Web.py, MySQL and Heroku App.
+2. Agregar 3 clientes a la base de datos.
 
-this template have the next functions
+3. Crear una Aplicación Web con Python que realice las siguientes acciones:
 
-### Functions
+3.1 Index (mostrar todos los clientes)
+3.2 Insert (insertar un nuevo cliente)
+3.3 View (Ver los datos de un cliente)
+3.4 Delete (Borrar un cliente)
+3.5 Update (Actualizar los datos de un cliente)
 
-+ Script for create a **kuorra_login** DB
-  - *users table*
-  - *sessions table*
-  - *logs table*
-  - * **kuorra** user and **kuorra.2018** password*
+4. Crear un Webservice que permita realizar las siguientes acciones:
 
-+ Config one DB conection.
-
-+ Create a **users Controller**.
-
-  - *Index*
-  - *View*
-  - *Edit*
-  - *Delete*
-  - *Insert*
-  - *config*
-  - *printer*
-  - *change_pwd*
-
-+ Create a **main Controller**
-
-  - *index*
-  - *login*
-  - *logout*
-  - *config*
-
-+ Create a **logs Controller**
- - *config*
- - *index*
- - *printer*
- - *view*
-
-+ Create a **Logs Model**
- - *get_all_logs*
- - *insert_logs*
-
-+ Create a **users Model**
- - *validate_user*
- - *get_all_users*
- - *get_users*
- - *delete_users*
- - *insert_users*
- - *edit_users*
- - *update_password*
-
-+ Create a **users View**
- - *change_pwd*
- - *delete*
- - *edit*
- - *index*
- - *insert*
- - *master*
- - *printer*
- - *view*
-
-+ Create a **main View**
- - *admin*
- - *guess*
- - *index*
- - *login*
- - *master*
-
-+ Create a **logs View**
- - *index*
- - *master*
- - *printer*
- - *view*
+4.1 Mostrar todos los clientes
+4.2 Insertar un cliente
+4.3 Borrar un cliente
+4.4 Actualizar un cliente
+4.5 Buscar un cliente
