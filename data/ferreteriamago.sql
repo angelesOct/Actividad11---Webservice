@@ -1,7 +1,11 @@
 
+/**
 CREATE DATABASE ferreteriamago;
 
 USE ferreteriamago;
+**/
+
+use myikjhhyc5i3f2rx;
 
 CREATE TABLE users(
     username varchar(20) NOT NULL PRIMARY KEY,
@@ -56,7 +60,3 @@ INSERT INTO clientes (nombre, apellido_paterno, apellido_materno, telefono, emai
 SELECT * FROM users;
 SELECT * FROM sessions;
 SELECT * FROM clientes;
-
-CREATE USER 'ferreteria'@'localhost' IDENTIFIED BY 'ferreteria.2019';
-GRANT ALL PRIVILEGES ON ferreteriamago.* TO 'ferreteria'@'localhost';
-FLUSH PRIVILEGES;
