@@ -1,5 +1,5 @@
 import web
-
+"""
 db_host = 'localhost'
 db_name = 'ferreteriamago'
 db_user = 'ferreteria'
