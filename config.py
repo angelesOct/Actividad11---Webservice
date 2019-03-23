@@ -1,5 +1,5 @@
 import web
-"""
+
 db_host = 'localhost'
 db_name = 'ferreteriamago'
 db_user = 'ferreteria'
@@ -25,3 +25,4 @@ db = web.database(
     user=db_user,
     pw=db_pw
     )
+"""
